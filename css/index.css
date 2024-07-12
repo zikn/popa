@@ -1,1 +1,43 @@
-/*# sourceMappingURL=index.css.map */
+.sort {
+  font-family: sans-serif;
+}
+.sort-info {
+  display: flex;
+  align-items: center;
+  color: #2C2C2C;
+}
+.sort-info svg {
+  margin-right: 6px;
+  transform: rotate(180deg);
+}
+.sort-info span {
+  color: #FE5F1E;
+  padding-bottom: 1px;
+  border-bottom: 1px dotted #FE5F1E;
+}
+.sort ul {
+  list-style: none;
+  padding: 13px 0;
+}
+.sort-popup {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.09);
+  max-width: 132px;
+  border-radius: 10px;
+  display: none;
+}
+.sort-popup li {
+  padding: 11px 14px;
+  box-sizing: border-box;
+}
+.sort-popup .active {
+  color: #FE5F1E;
+  font-weight: 700;
+  background: rgba(254, 95, 30, 0.0509803922);
+}
+
+.sort.active .sort-popup {
+  display: block;
+}
+.sort.active svg {
+  transform: rotate(0);
+}/*# sourceMappingURL=index.css.map */

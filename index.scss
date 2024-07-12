@@ -1,1 +1,53 @@
-
+.sort { 
+    font-family: sans-serif; 
+ 
+    &-info { 
+        display: flex; 
+        align-items: center; 
+        color: #2C2C2C; 
+ 
+        svg { 
+            margin-right: 6px; 
+            transform: rotate(180deg); 
+        } 
+ 
+        span { 
+            color: #FE5F1E; 
+            padding-bottom: 1px; 
+            border-bottom: 1px dotted #FE5F1E; 
+        } 
+    } 
+ 
+    ul { 
+        list-style: none; 
+        padding: 13px 0; 
+    } 
+ 
+    &-popup { 
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.09); 
+        max-width: 132px; 
+        border-radius: 10px; 
+        display: none; 
+ 
+        li { 
+            padding: 11px 14px; 
+            box-sizing: border-box; 
+        } 
+ 
+        .active { 
+            color: #FE5F1E; 
+            font-weight: 700; 
+            background: #FE5F1E0D; 
+        } 
+    } 
+} 
+ 
+.sort.active { 
+    .sort-popup { 
+        display: block; 
+    } 
+ 
+    svg { 
+        transform: rotate(0); 
+    } 
+}
